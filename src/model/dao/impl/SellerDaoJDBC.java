@@ -61,6 +61,7 @@ public class SellerDaoJDBC implements SellerDao {
                 obj.setBaseSalary(rs.getDouble("BaseSalary"));
                 obj.setBirthDate(rs.getDate("BirthDate"));
                 obj.setDepartment(dep);
+                return obj;
             }
             return null;
         }
